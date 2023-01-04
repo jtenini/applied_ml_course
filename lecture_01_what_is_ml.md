@@ -50,9 +50,11 @@ Your premium users have access to "snorg tutor" - a computor tutor that will cho
 
 ## Supervised learning
 
-### Classification
+Sometimes the universe grants us partial and noisy access to a function:
 
-### Regression
+$$f: X \to Y$$
+
+
 
 ## Unsupervised learning
 
