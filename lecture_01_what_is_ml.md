@@ -54,7 +54,24 @@ Sometimes the universe grants us partial and noisy access to a function:
 
 $$f: X \to Y$$
 
+That is, for some subset $U \subset X$, we get noisy access to pairs $(u, n(f(u)))$ for some noise function $n$ that fiddles with the truth (like randomness or measurement error). Our task is to learn $f$ through some function approximation technique. I'll drop the business with $n$ now to make the notation cleaner and be able to just refer to observing $f$ directly, but know that it is there.
 
+When $Y = \{0, 1\}$, the task is called classification. When $Y = \mathbb{R}$, the task is called regression.
+
+The general approach for these tasks is to make two important choices:
+
+1. A space of functions $F$ that might contain something similar to $f$.
+2. A notion of "distance" or "loss" $L$ to $f$ (really $n \circ f$) for $F$ with respect to $U$.
+
+That is, we need a space of functions $F$ and a loss function $L_U(g, f)$ that tells us how much $f$ and $g$ disagree on $U$ (or how much of the information of $f$ is lost if we were to swap it out for $g$).
+
+For a regression problem, this function $L$ could be "squared error" - that is:
+
+$$L_U(f, g) = \sum_{u \in U} (f(u) - g(u))^2 $$
+
+Given a choice of $F$, $L$, and $U$, we can search $F$ to minimize $L$ over $U$ producing the "best fit" $\hat{f}$. A very useful approach to this strategy is starting at a randomly chosen function $f_0$ and moving successively in the direction of $-\nabla L_U(f, f_0)$ - a trick called gradient descent (if we compute $L$ over only a small subset of $U$ then it's called stochastic gradient descent).
+
+Much of this course will be dedicated to understanding the choices of $F$ and $L$ as well as how to perform the search of the function space and how to understand the fitness of our candidate $\hat{f}$.
 
 ## Unsupervised learning
 
