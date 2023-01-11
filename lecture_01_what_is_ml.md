@@ -89,9 +89,12 @@ Another common task a working data scientist encounters in the real world is to 
 
 ## Reinforcement learning
 
-### Bandit problems
+Reinforcement learning generally refers to the practice of learning "good" decision making agents within the context of a Markov decision process. In this setting, an agent is presented with a state, must select an action, and then recieves as a result of the action, a new state and a real number reward. This continues either indefinitely or for a finite number of steps called an episode. Good agents are those that maximise the (possibly discounted) sum of rewards (called the return). The Markov property states that the mechanics that generate the new state and reward depend only on the current state and the action select (though is perhaps non-deterministic). That is, it is memory-less with respect to previous states and actions.
 
-### Success in game playing
+This is a very appealing set up because it is highly general and revolves around the concept of decision making. Indeed, performing analysis (like in unsupervised learning) and learning models of the world (like in supervised learning) are typically of interest only when they lead to better decision making. The RL perspective approaches this task wholistically. While general RL problems often prove very difficult, there is broad success in two cases:
+
+1. The bandit problem where the MDP is simplified by having episode length of one (only one round of the state, action, reward dance)
+2. Cases where access to the environment is very cheap and available at tremendous scale - game play like chess, go, and starcraft.
 
 ## Exercises
 
