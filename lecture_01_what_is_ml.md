@@ -99,4 +99,4 @@ Another common task a working data scientist encounters in the real world is to 
 2. Install the `jupyter` python library. Details [here](https://jupyter.org/install). We will be working in jupyter notebooks for this class.
 3. Sign up for a github account if you don't have one already.
 4. Clone the repo here: `https://github.com/jtenini/applied_ml_course`.
-5. Open and run the jupyter notebook in the repo.
+5. Open and run the jupyter notebook in the repo, this will require the pandas library.
