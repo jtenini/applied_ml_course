@@ -1,0 +1,1 @@
+For this lecture, we will follow these [notes](https://medium.com/rv-data/linear-algebra-for-machine-learning-bed3d0b86d3) to introduce the core concepts from linear algebra that are commonly used in machine learning.
