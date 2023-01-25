@@ -42,12 +42,12 @@ $$g(x) = \frac{1}{1+\exp{-\beta^Tx}}$$
 
 how do we measure how bad or good this function is? One natural choice in cases like this, where we produce probabilities to be evauated against historical classification data is the principle of maximum likelihood. Specifically, that the probabilities produced by our logistic regression function should maximize the likelihood of the actual data we have observed.
 
-So, how likely is the data ${(x_i, y_i)}^N_{i=1}$ if $Pr(Y=y_i | X=x_i) = g(x)$? Well, it is straightforward to compute that this likelihood is:
+So, how likely is the data $\{(x_i, y_i)\}^N_{i=1}$ if $Pr(Y=y_i | X=x_i) = g(x)$? Well, it is straightforward to compute that this likelihood is:
 
 $$\prod^N_{i=1} [y_ig(x_i) + (1-y_i)(1-g(x_i))]$$
 
 But maximizing this quantity is the same as maximizing it's log (since log is a monotone increasing function. Thus, we may instead seek to maximize:
 
-$$\sum^N_{i=1} y_i\log{g(x_i)} + (1-y_i)\log{1-g(x_i)}$$
+$$\sum^N_{i=1} y_i\log({g(x_i)}) + (1-y_i)\log({1-g(x_i)})$$
 
 So, we see that the logistic regression model fitting process amounts to searching the space of all logistic regression function and finding the one where the above quantity is maximized.
