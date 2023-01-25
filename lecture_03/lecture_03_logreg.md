@@ -18,3 +18,36 @@ Now let's look at another example:
 
 ![Linearly inseparable data](no_lin_sep.png "Linearly inseparable data.")
 
+As we see from the examples above, it is certainly possible that the two classes need not be linearly separable. Indeed, in practice this is almost never the case. What are we to do then? What linear subspace should we choose? From the grand introduction to classification problems, we know that we should stop and ask what our notion of loss or gain should be.
+
+Let us now formalize the function space that logistic regression considers as well as how we will judge logistic regressions.
+
+The specification of the logistic regression space comes from modeling the log-odds of teh event in question as a linear function:
+
+$$\log \left( \frac{Pr(Y=1 | X=x)}{Pr(Y=0 | X=x)} \right) = \beta^Tx$$
+
+From this we can make our way (as an exercise to the reader) to the form:
+
+$$Pr(Y=1 | X=x) = \frac{1}{1 + \exp{-\beta^Tx}}$$
+
+### Exercises
+1. When $\beta^Tx >> 0$, what is $Pr(Y=1 | X=x)$ close to?
+2. When $\beta^Tx << 0$, what is $Pr(Y=1 | X=x)$ close to?
+3. When $\beta^Tx = 0$, what is $Pr(Y=1 | X=x)$ equal to?
+4. Draw the function $f(t) = \frac{1}{1 + \exp(-t)}$?
+
+So, given this particular specification of our function space, that is, all functions of the form
+
+$$g(x) = \frac{1}{1+\exp{-\beta^Tx}}$$
+
+how do we measure how bad or good this function is? One natural choice in cases like this, where we produce probabilities to be evauated against historical classification data is the principle of maximum likelihood. Specifically, that the probabilities produced by our logistic regression function should maximize the likelihood of the actual data we have observed.
+
+So, how likely is the data ${(x_i, y_i)}^N_{i=1}$ if $Pr(Y=y_i | X=x_i) = g(x)$? Well, it is straightforward to compute that this likelihood is:
+
+$$\prod^N_{i=1} [y_ig(x_i) + (1-y_i)(1-g(x_i))]$$
+
+But maximizing this quantity is the same as maximizing it's log (since log is a monotone increasing function. Thus, we may instead seek to maximize:
+
+$$\sum^N_{i=1} y_i\log{g(x_i)} + (1-y_i)\log{1-g(x_i)}$$
+
+So, we see that the logistic regression model fitting process amounts to searching the space of all logistic regression function and finding the one where the above quantity is maximized.
