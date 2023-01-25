@@ -10,6 +10,10 @@ Good machine learning practitioners are autonomous and proactive. In particular,
 
 This project is to be completed independently from each other, but not from the internet. This means you should not consult fellow students in completing it, but you may consult internet resources like standard documentation and stackoverflow.
 
+## Turning in
+
+Please export your notebook including code and outputs to a pdf and turn in through canvas by Feb 8 at or before midnight.
+
 ## Project directions
 
 Please complete the following steps, showing your work along the way. Read all steps before beginning work as later tasks will inform how you might approach earlier tasks.
