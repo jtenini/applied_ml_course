@@ -28,7 +28,7 @@ $$\log \left( \frac{Pr(Y=1 | X=x)}{Pr(Y=0 | X=x)} \right) = \beta^Tx$$
 
 From this we can make our way (as an exercise to the reader) to the form:
 
-$$Pr(Y=1 | X=x) = \frac{1}{1 + \exp{-\beta^Tx}}$$
+$$Pr(Y=1 | X=x) = \frac{1}{1 + \exp({-\beta^Tx})}$$
 
 ### Exercises
 1. When $\beta^Tx >> 0$, what is $Pr(Y=1 | X=x)$ close to?
@@ -38,7 +38,7 @@ $$Pr(Y=1 | X=x) = \frac{1}{1 + \exp{-\beta^Tx}}$$
 
 So, given this particular specification of our function space, that is, all functions of the form
 
-$$g(x) = \frac{1}{1+\exp{-\beta^Tx}}$$
+$$g(x) = \frac{1}{1+\exp({-\beta^Tx})}$$
 
 how do we measure how bad or good this function is? One natural choice in cases like this, where we produce probabilities to be evauated against historical classification data is the principle of maximum likelihood. Specifically, that the probabilities produced by our logistic regression function should maximize the likelihood of the actual data we have observed.
 
