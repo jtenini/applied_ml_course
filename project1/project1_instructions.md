@@ -2,7 +2,7 @@
 
 ## Overview
 
-For this exercise, you will be creating a logistic regression model on the `project1_data.csv` file. Below are a series of steps, you are to create a notebook which accomplish the steps. You will turn in a .pdf file which shows your notebook along with the cell output. Focus not just on correctness, but also on legibility. Correct answers that are too convoluted for the grader to understand will not recieve full credit - remember that code is not just run, it is also read by others.
+For this exercise, you will be creating a logistic regression model on the `project1_data.csv` file. Below are a series of steps, you are to create a notebook which accomplish the steps. You will turn in an .html file which shows your notebook along with the cell output. Focus not just on correctness, but also on legibility. Correct answers that are too convoluted for the grader to understand will not recieve full credit - remember that code is not just run, it is also read by others.
 
 Good machine learning practitioners are autonomous and proactive. In particular, they should not need to be told what the steps are in the problem solving process. In future projects, full steps will not be given as they are below. Instead it might be something closer to: "fit a logistic regression model to the data."
 
@@ -12,7 +12,7 @@ This project is to be completed independently from each other, but not from the 
 
 ## Turning in
 
-Please export your notebook including code and outputs to a pdf and turn in through canvas by Feb 8 at or before midnight.
+Please export your notebook including code and outputs to an .html file and turn in through canvas by Feb 8 at or before midnight.
 
 ## Project directions
 
