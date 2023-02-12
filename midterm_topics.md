@@ -43,4 +43,3 @@ You will not be asked to write any code on the test, but you will be asked to id
 2. Model evaluation.
 	1. RMSE.
 	2. MAE.
-	3. Huber loss.
