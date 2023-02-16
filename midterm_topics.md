@@ -42,4 +42,4 @@ You will not be asked to write any code on the test, but you will be asked to id
 	3. Gradient boosting regressors.
 2. Model evaluation.
 	1. RMSE.
-	2. MAE.
+	2. R squared.
