@@ -23,5 +23,5 @@ Please export your notebook including code and outputs to an .html file and turn
 	a. A logistic regression classifier.
 	b. A tree-based classifier (e.g. GBM, RF, etc.)
 	c. A deep neural network. 
-4. Find the model with the lowest AUC - what is it?
+4. Find the model with the highest AUC - what is it?
 5. Create a pitch for your product. That is, write a summary of how the model would provide value to a business or consumer.
