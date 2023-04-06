@@ -10,7 +10,7 @@ For this project you may research and collaborate as you see fit, but your code 
 
 ## Turning in
 
-Please export your notebook including code and outputs to an .html file and turn in through canvas by April 12 at or before midnight.
+Please export your notebook including code and outputs to an .html file and turn in through canvas by April 16 at or before midnight.
 
 ## Project directions
 
